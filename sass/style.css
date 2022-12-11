@@ -1,0 +1,114 @@
+body {
+  max-width: 1440px;
+  box-sizing: border-box;
+  background: #EFEEF3;
+  color: #16133D;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.container .header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+}
+.container .header__logo .logo__icon {
+  width: 30px;
+  height: 30px;
+  color: #3DB370;
+}
+.container .header__logo .logo__link {
+  font-family: "Quicksand";
+  font-size: 35px;
+  line-height: 35px;
+  color: #16133D;
+  text-decoration: none;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.main {
+  width: 1170px;
+  margin: 100px auto;
+}
+
+.title {
+  display: inline-block;
+}
+.title .text {
+  color: #7690A8;
+  Font-family: Roboto;
+  font-weight: 400;
+  Font-size: 16px;
+  Line-height: 21px;
+}
+.title .title__item {
+  color: #16133D;
+  Font-family: Nunito Sans;
+  Font-size: 40px;
+  Line-height: 52px;
+  Letter-spacing: 0.2px;
+  margin-top: 15px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.section {
+  width: 33%;
+  height: 340px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #E5EAF4;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.section:not(:first-child) {
+  margin-left: 30px;
+}
+
+.content {
+  max-width: 290px;
+}
+.content .section__icon {
+  width: 60px;
+  height: 60px;
+}
+.content .inner__link {
+  Font-family: Roboto;
+  font-weight: 700;
+  Font-size: 16px;
+  Line-height: 19px;
+  color: #3DB370;
+  text-decoration: none;
+}
+
+.inner {
+  margin: 30px auto;
+}
+.inner .inner__title {
+  font-family: Roboto;
+  Font-size: 24px;
+  Line-height: 21.28px;
+  Letter-spacing: 0.2px;
+}
+.inner .inner__text {
+  Font-family: Roboto;
+  font-weight: 400;
+  Font-size: 16px;
+  Line-height: 28px;
+  color: #16133D;
+}/*# sourceMappingURL=style.css.map */
