@@ -19,7 +19,7 @@ body {
 .container .header__logo .logo__icon {
   width: 30px;
   height: 30px;
-  color: #3DB370;
+  fill: #3DB370;
 }
 .container .header__logo .logo__link {
   font-family: "Quicksand";
@@ -27,11 +27,6 @@ body {
   line-height: 35px;
   color: #16133D;
   text-decoration: none;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
 }
 
 .main {
@@ -67,25 +62,52 @@ body {
 .section {
   width: 33%;
   height: 340px;
-  display: flex;
-  justify-content: space-between;
   border: 1px solid #E5EAF4;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  cursor: pointer;
 }
 .section:not(:first-child) {
   margin-left: 30px;
 }
+.section:hover {
+  border: 1px solid #3DB370;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+.section:hover .icon-green {
+  display: flex;
+}
+.section:hover .icon-blue {
+  display: none;
+}
 
 .content {
   max-width: 290px;
+  margin: 40px;
 }
 .content .section__icon {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(61, 179, 112, 0.1);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.content .section__icon .icon {
+  width: 30px;
+  height: 30px;
 }
 .content .inner__link {
   Font-family: Roboto;
@@ -111,4 +133,15 @@ body {
   Font-size: 16px;
   Line-height: 28px;
   color: #16133D;
+}
+
+.icon-green {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-blue {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */
