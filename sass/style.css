@@ -1,8 +1,17 @@
 body {
   max-width: 1440px;
   box-sizing: border-box;
-  background: #EFEEF3;
+  background: #ffffff;
   color: #16133D;
+  margin: 0 auto;
+}
+
+a:focus {
+  outline: none;
+}
+
+.header {
+  border-bottom: 1px solid #EFEEF3;
 }
 
 .container {
@@ -19,7 +28,6 @@ body {
 .container .header__logo .logo__icon {
   width: 30px;
   height: 30px;
-  fill: #3DB370;
 }
 .container .header__logo .logo__link {
   font-family: "Quicksand";
@@ -29,7 +37,7 @@ body {
   text-decoration: none;
 }
 
-.main {
+.main__content {
   width: 1170px;
   margin: 100px auto;
 }
@@ -81,11 +89,14 @@ body {
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
 }
-.section:hover .icon-green {
-  display: flex;
+.section:hover .section__icon {
+  border: 1px solid rgba(61, 179, 112, 0.1019607843);
 }
-.section:hover .icon-blue {
+.section:hover .blue {
   display: none;
+}
+.section:hover .green {
+  display: flex;
 }
 
 .content {
@@ -98,16 +109,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(61, 179, 112, 0.1);
+  border: 1px solid rgba(21, 101, 216, 0.1);
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
-}
-.content .section__icon .icon {
-  width: 30px;
-  height: 30px;
 }
 .content .inner__link {
   Font-family: Roboto;
@@ -116,6 +123,10 @@ body {
   Line-height: 19px;
   color: #3DB370;
   text-decoration: none;
+}
+
+.green {
+  display: none;
 }
 
 .inner {
@@ -133,15 +144,83 @@ body {
   Font-size: 16px;
   Line-height: 28px;
   color: #16133D;
+  margin-top: 15px;
 }
 
-.icon-green {
-  display: none;
-  width: 30px;
-  height: 30px;
+.footer {
+  background: #16133D;
+  height: 193px;
+}
+.footer .footer__container {
+  width: 1170px;
+  height: 113px;
+  margin: auto;
+  padding: 40px 0;
 }
 
-.icon-blue {
-  width: 30px;
-  height: 30px;
+.footer__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.footer__logo .footer__logo-link {
+  font-family: "Quicksand";
+  font-size: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  margin-top: 40px;
+}
+.social .social__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #EFEEF3;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.social .social__item-link:hover .icon {
+  fill: #3DB370;
+}
+
+.instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook {
+  width: 10px;
+  height: 19px;
+}
+
+.github {
+  width: 20px;
+  height: 19.5px;
+}
+
+.dribble {
+  width: 19.3px;
+  height: 19.3px;
+}
+
+.twitter {
+  width: 20px;
+  height: 16px;
+}
+
+.logo {
+  fill: #3DB370;
 }/*# sourceMappingURL=style.css.map */
