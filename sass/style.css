@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   background: #ffffff;
   color: #16133D;
+  Font-family: Roboto;
   margin: 0 auto;
 }
 
@@ -178,7 +179,7 @@ a:focus {
   width: 230px;
   margin-top: 40px;
 }
-.social .social__item-link {
+.social .social__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,8 +193,13 @@ a:focus {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.social .social__item-link:hover .icon {
-  fill: #3DB370;
+.social .social__item .icon {
+  width: 100%;
+  height: 20px;
+  color: #0D0D0D;
+}
+.social .social__item:hover .icon {
+  color: #3DB370;
 }
 
 .instagram {
@@ -219,9 +225,4 @@ a:focus {
 .twitter {
   width: 20px;
   height: 16px;
-}
-
-.inside {
-  fill: green;
-  stroke: white;
 }/*# sourceMappingURL=style.css.map */
